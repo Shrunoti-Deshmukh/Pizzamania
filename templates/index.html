@@ -1,0 +1,349 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pizzamania</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Template Stylesheet -->
+
+    <link href="{% static '/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+    {% include 'header.html' %}
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header" style="">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="font-secondary text-primary mb-4">Tasty Toppings</h1>
+                    <h1 class="display-1 text-uppercase text-white mb-4">Pizzamania</h1>
+                    <h1 class="text-uppercase text-white">World's Best recipes For You!!</h1>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="" class="btn btn-primary border-inner py-3 px-5 me-5">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">ABOUT</h2>
+                <h1 class="display-4 text-uppercase">Welcome To Pizzamania</h1>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100"
+                            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pb-5">
+                    <h4 class="mb-4">Easy recipes and topping ideas for homemade Pizza.</h4>
+                    <p class="mb-5">Welcome to Pizzamania. Her you can find easy recipes and the best topping ideas for
+                        homemade Pizza. We also have the world’s largest list of different pizza varieties and
+                        instructions how to make Italian Pizza dough and tomato sauce at home.</p>
+                    <div class="row g-5">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4"
+                                style="width: 90px; height: 90px;">
+                                <i class="fa fa-heartbeat fa-2x text-white"></i>
+                            </div>
+                            <h4 class="text-uppercase">100% Healthy</h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4"
+                                style="width: 90px; height: 90px;">
+                                <i class="fa fa-award fa-2x text-white"></i>
+                            </div>
+                            <h4 class="text-uppercase">Award Winning</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <br>
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid bg-img py-5 mb-5">
+        <div class="container py-5">
+            <div class="row gx-5 gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-star text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Our Experience</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Pizza Specialist</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Complete Project</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-mug-hot text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Happy Clients</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+    <!-- Dough Starts -->
+
+    <div class="container">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+            <h1 class="text-primary font-secondary">Explore Our Menu</h1><br>
+        </div>
+    </div>
+    <!--Main Tab-->
+    <div class="tab-class text-center">
+        <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
+            <li class="nav-item">
+                <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">Sauces</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">Doughs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Pizzas</a>
+            </li>
+        </ul>
+        <!--Main Tab Ends-->
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="container">
+                    <div class="row hidden-md-up">
+                        <!--for start-->
+                        {% for n in sauce_data %}
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class="card-img-top" src="{% static 'img/'|add:n.image|add:'.jpg' %}"
+                                        alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">{{ n.name }}</h4>
+                                        <a href="{% url 'show' slug=n.name %}" class="btn btn-primary">See
+                                            Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="tab-2" class="tab-pane fade show p-0">
+                <div class="container">
+                    <div class="row hidden-md-up">
+                        <!--for start-->
+                        {% for n in dough_data %}
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class="card-img-top" src="{% static 'img/'|add:n.image|add:'.jpg' %}"
+                                        alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">{{ n.name }}</h4>
+                                        <a href="{% url 'show' slug=n.name %}" class="btn btn-primary">See
+                                            Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-3" class="tab-pane fade show p-0">
+                <div class="container">
+                    <div class="row hidden-md-up">
+                        <!--for start-->
+                        {% for n in pizza_data %}
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class="card-img-top" src="{% static 'img/'|add:n.image|add:'.jpg' %}"
+                                        alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">{{ n.name }}</h4>
+                                        <a href="{% url 'show' slug=n.name %}" class="btn btn-primary">See
+                                            Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--for end-->
+
+    <!-- Dough End-->
+
+    <!-- Service Start -->
+    <div class="container-fluid service position-relative px-5 mt-5"  style="margin-bottom: 140px">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Dough Recipes</h4>
+                        <p>Dough-n't hold back! Embrace the therapeutic magic of kneading and create your culinary
+                            masterpiece.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Sauce Recipes</h4>
+                        <p>Our pizza sauce: a magical potion that turns dough and cheese into a bewitching culinary
+                            spell.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Pizza Recipes</h4>
+                        <p>Embark on a flavor journey with our Mediterranean Pizza, where sun-kissed tomatoes dance with
+                            briny olives under a creamy feta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-img text-secondary">
+        <div class="container col-lg-2">
+            <div class="row">
+                <div class="d-flex mt-3 mb-3">
+                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-pill me-2"
+                        href="mailto:deshmukhshrunoti@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-pill me-2"
+                        href="https://github.com/Shrunoti-Deshmukh"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-pill me-2"
+                        href="https://www.linkedin.com/in/shrunoti-deshmukh-0840451b5/"><i
+                            class="fab fa-linkedin-in fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
